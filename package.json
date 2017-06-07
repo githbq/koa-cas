@@ -13,7 +13,10 @@
         "p": "npm run tsc && npm publish",
         "lint": "tslint \"src/**/*.ts\""
     },
-    "dependencies": {"tslib": "^1.6.1"},
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.1",
+        "tslib": "^1.6.1"
+    },
     "devDependencies": {
         "@types/mocha": "^2.2.41",
         "@types/node": "^6.0.48",
@@ -25,9 +28,14 @@
         "tslint": "^5.1.0",
         "typescript": "^2.3.2"
     },
-    "keywords": ["typescript", "koa-cas"],
+    "keywords": [
+        "typescript",
+        "koa-cas"
+    ],
     "author": "hubiqing",
-    "repository": "https://github.com/githbq/hbq-module-boilerplate.git",
-    "engines": {"node": ">=7.6"},
+    "repository": "https://github.com/githbq/koa-cas.git",
+    "engines": {
+        "node": ">=7.6"
+    },
     "license": "MIT"
 }
