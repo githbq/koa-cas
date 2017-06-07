@@ -1,0 +1,33 @@
+{
+    "name": "koa-cas",
+    "version": "0.0.1",
+    "description": "koa-cas",
+    "main": "build/index.js",
+    "scripts": {
+        "start:build": "npm run tsc && node build",
+        "start": "node run",
+        "test": "mocha src/**/*.test.ts",
+        "clear": "rimraf build",
+        "tsc": "npm run clear && tsc",
+        "tsc:w": "npm run clear && tsc -w",
+        "p": "npm run tsc && npm publish",
+        "lint": "tslint \"src/**/*.ts\""
+    },
+    "dependencies": {"tslib": "^1.6.1"},
+    "devDependencies": {
+        "@types/mocha": "^2.2.41",
+        "@types/node": "^6.0.48",
+        "@types/should": "^8.3.0",
+        "mocha": "^3.3.0",
+        "rimraf": "^2.6.1",
+        "should": "^11.2.1",
+        "ts-node": "^3.0.2",
+        "tslint": "^5.1.0",
+        "typescript": "^2.3.2"
+    },
+    "keywords": ["typescript", "koa-cas"],
+    "author": "hubiqing",
+    "repository": "https://github.com/githbq/hbq-module-boilerplate.git",
+    "engines": {"node": ">=7.6"},
+    "license": "MIT"
+}
