@@ -162,7 +162,7 @@ function _parseAttributes(elemSuccess) {
  * @private
  */
 function _httpsGet({
-                      host = '',
+    host = '',
     port = 0,
     path = '',
     ca = null,
