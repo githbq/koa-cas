@@ -1,6 +1,6 @@
 {
     "name": "koa-cas",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "koa-cas",
     "main": "build/index.js",
     "scripts": {
