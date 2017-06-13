@@ -479,7 +479,7 @@ export class CAS {
      *      the `req` object.
      */
     async authenticate(ctx, service) {
-        let reqURL = url.parse(ctx.url, true)
+        let reqURL = url.parse(ctx.originalUrl, true)
         // Try to extract the CAS ticket from the URL
         let ticket = reqURL.query.ticket
 
