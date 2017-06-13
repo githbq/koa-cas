@@ -1,6 +1,6 @@
 {
     "name": "koa-cas",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "koa-cas",
     "main": "build/index.js",
     "scripts": {
@@ -28,14 +28,9 @@
         "tslint": "^5.1.0",
         "typescript": "^2.3.2"
     },
-    "keywords": [
-        "typescript",
-        "koa-cas"
-    ],
+    "keywords": ["typescript", "koa-cas"],
     "author": "hubiqing",
     "repository": "https://github.com/githbq/koa-cas.git",
-    "engines": {
-        "node": ">=7.6"
-    },
+    "engines": {"node": ">=7.6"},
     "license": "MIT"
 }

@@ -19,6 +19,13 @@ import * as  cheerio from 'cheerio'
  *     }
  * @private
  */
+/**
+ * 替换 \ 为 /
+ */
+function replaceSep(str: string) {
+    return str.replace(/\\/g, '/')
+}
+
 function _parseAttributes(elemSuccess) {
     let attributes = {}
     let elemAttribute = elemSuccess.find('cas\\:attributes').first()
@@ -380,7 +387,7 @@ export class CAS {
         }
 
         let queryPath = url.format({
-            pathname: path.join(this.casUrl.pathname, '/', validatePath),
+            pathname: replaceSep(path.join(this.casUrl.pathname, '/', validatePath)),
             query: query
         })
 
@@ -499,7 +506,7 @@ export class CAS {
                 protocol: this.casUrl.protocol,
                 hostname: this.casUrl.hostname,
                 port: this.casUrl.port,
-                pathname: path.join(this.casUrl.pathname, '/login'),
+                pathname: replaceSep(path.join(this.casUrl.pathname, '/login')),
                 search: `service=${encodeURIComponent(service)}`
             })
 
@@ -532,7 +539,7 @@ export class CAS {
             protocol: this.casUrl.protocol,
             hostname: this.casUrl.hostname,
             port: this.casUrl.port,
-            pathname: path.join(this.casUrl.pathname, '/logout'),
+            pathname: replaceSep(path.join(this.casUrl.pathname, '/logout')),
             search: `service=${encodeURIComponent(returnUrl)}`
         })
 
